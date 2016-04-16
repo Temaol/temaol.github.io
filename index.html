@@ -3,36 +3,23 @@
 <head>
     <meta charset="utf-8">
     <title>Мои книги</title>
+    <script src="functions.js"></script>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="cs.css">
 </head>
 
 <body>
 <h1>Мои книги</h1>
 <table>
     <tr>
-        <th>7 привычек высокоеффективного подростка</th>
-        <td>1</td>
+        <th>Название</th>
+        <th>Прочитано</th>
     </tr>
-    <tr>
-        <th> Удивительные приключения в стране Экономика. Липсиц И.В.
-</th>
-        <td>yandex.disk   ; fileskachat.com</td>
-    </tr>
-    <tr>
-        <th></th>
-        <td></td>
-    </tr>
-    <tr>
-        <th></th>
-        <td></td>
-    </tr>
-    <tr>
-        <th></th>
-        <td></td>
-    </tr>
-    <tr>
-        <th></th>
-        <td></td>
-    </tr>
+    <script>
+        books.forEach(function(book, i, books) {
+                drawtr(book);
+                });
+    </script>
 </table>
 </body>
 </html>
