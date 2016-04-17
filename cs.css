@@ -2,3 +2,9 @@
 .c {
     text-align: center;
 }
+
+input {
+    height: 1.5em;
+    width: 2em;
+    font-size: 14pt;
+}
