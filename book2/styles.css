@@ -1,0 +1,19 @@
+body {
+  margin: 1em;
+}
+.box {
+  padding: 1em;
+  width: 31%;
+  float: left;
+}
+#school {
+  background-color: yellow;
+}
+
+#sciencefiction {
+  background-color: skyblue;
+}
+
+#selfdevelopment {
+  background-color: papayawhip;
+}
