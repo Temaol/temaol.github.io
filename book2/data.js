@@ -1,7 +1,6 @@
 schoolbooks = [
-          {
-          "http://mobile.flibusta.is/b/65783/mobi": "Слово о полку Игореве (kindle)",
-          "http://mobile.flibusta.is/b/402381/mobi": "Жан Батист Мольер - Мещанин во дворянстве (kindle)",
+          {"http://mobile.flibusta.is/b/65783/mobi": "Слово о полку Игореве (kindle)",}
+          {"http://mobile.flibusta.is/b/402381/mobi": "Жан Батист Мольер - Мещанин во дворянстве (kindle)",}
           "http://mobile.flibusta.is/b/94929/mobi": "Жан Батист Мольер - Тартюф (kindle)",
           "http://mobile.flibusta.is/b/169510/mobi": "Денис Иванович Фонвизин - Недоросль (kindle)",
           "http://mobile.flibusta.is/b/143864/mobi": "Карамзин - Бедная Лиза (kindle)",
@@ -18,10 +17,9 @@ schoolbooks = [
           "http://mobile.flibusta.is/b/66354/mobi": "Иван Алексеевич Бунин - Господин из Сан-Франциско (kindle)",
           "http://mobile.flibusta.is/b/215872/mobi": "Михаил Александрович Шолохов - Судьба человека (kindle)",
           "http://mobile.flibusta.is/b/53364/mobi": "Александр Исаевич Солженицын - Матренин двор (kindle)"
-      }
 ];
 sciencefictionbooks = [{}];
-selfdevelopmentbooks = [{
+selfdevelopmentbooks = [
   "s/2.mobi": "Ричард Нисбетт - Мозгоускорители (kindle)",
 
 
@@ -32,7 +30,4 @@ selfdevelopmentbooks = [{
 
 
 "s/pse.pdf": "Удивительные приключения в стране Экономика (PDF)",
-
-
-
-}];
+];

@@ -4,96 +4,54 @@
 
 TODO:
 1) -вынести общие стили в отдельные классы, вынести CSS в отдельный файл-
-2) -перенести данные в json,- выводить все js-ом
+2) -перенести данные в json, выводить все js-ом-
 3) добавить другие форматы книг (epub, fb2, pdf где возможно)
 4) сделать возможность добавления новых ссылок (с описанием) и сохранением через свою API (его напишу я отдельно)
 5) сделать парсер названий/авторов добавленных книг, чтобы не вводить описания вручную.
 
  -->
+
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<script src="data.js"></script>
+	<script src="fun.js"></script>
 	<meta charset="UTF-8">
 	<title>Сборник книг</title>
-	</head>
+</head>
 
 <body>
 	<div id="school" class="box">
-		<ul>
-			<li><a href="http://mobile.flibusta.is/b/65783/mobi">Слово о полку Игореве (kindle)</a></li>
+		<script type="text/javascript">
+		console.log(schoolbooks);
 
-</ul>
-	</div>
-	<div id="sciencefiction" class="box">&nbsp;
-	</div>
-	<div id="selfdevelopment" class="box">
-		<ul>
-			<li>
-				<a href="s/1.mobi">Бен Хоровиц - Легко не будет (kindle)</a>
-			</li>
-			<li>
-				<a href="s/2.mobi">Ричард Нисбетт - Мозгоускорители (kindle)</a>
-			</li>
-			<li>
-				<a href="s/sb.mobi">Кен Робинсон - Школа будущего (kindle)</a>
-			</li>
-			<li>
-				<a href="s/p.mobi">Кен Робинсон - Призвание (kindle)</a>
-			</li>
-			<li>
-				<a href="s/pse.pdf">Удивительные приключения в стране Экономика (PDF)</a>
-			</li>
-		</ul>
-	</div>
-</body>
-
-</html>
-<!DOCTYPE HTML>
-<html lang="ru">
-<!--
-
-TODO:
-1) вынести общие стили в отдельные классы, вынести CSS в отдельный файл
-2) перенести данные в json, выводить все js-ом
-3) добавить другие форматы книг (epub, fb2, pdf где возможно)
-4) сделать возможность добавления новых ссылок (с описанием) и сохранением через свою API (его напишу я отдельно)
-5) сделать парсер названий/авторов добавленных книг, чтобы не вводить описания вручную.
-
- -->
-<head>
-	<link rel="stylesheet" href="styles.css">
-	<meta charset="UTF-8">
-	<title>Сборник книг</title>
-	</head>
-
-<body>
-	<div id="school" class="box">
+		</script>
 		<ul>
 			<li><a href="http://mobile.flibusta.is/b/65783/mobi">Слово о полку Игореве (kindle)</a></li>
 			<li><a href="http://mobile.flibusta.is/b/402381/mobi">Жан Батист Мольер - Мещанин во дворянстве (kindle)
-			<li><a href="http://mobile.flibusta.is/b/94929/mobi">Жан Батист Мольер - Тартюф (kindle)
-			<li><a href="http://mobile.flibusta.is/b/169510/mobi">Денис Иванович Фонвизин - Недоросль (kindle)
-			<li><a href="http://mobile.flibusta.is/b/143864/mobi">Карамзин - Бедная Лиза (kindle)
-			<li><a href="http://mobile.flibusta.is/b/147684/mobi">Джордж Гордон Байрон - Паломничество Чайльд-Гарольда (kindle)
-			<li><a href="http://mobile.flibusta.is/b/397134/mobi">Александр Сергеевич Грибоедов - Горе от ума (kindle)
-			<li><a href="http://mobile.flibusta.is/b/173154/mobi">Александр Сергеевич Пушкин - Борис Годунов (kindle)
-			<li><a href="http://mobile.flibusta.is/b/107678/mobi">Александр Сергеевич Пушкин - Цыганы (kindle)
-			<li><a href="http://mobile.flibusta.is/b/385832/mobi">Иван Сергеевич Тургенев - Ася (kindle)
-			<li><a href="http://mobile.flibusta.is/b/436414/mobi">Михаил Евграфович Салтыков-Щедрин - Сказки (kindle)
-			<li><a href="http://mobile.flibusta.is/b/81133/mobi">Михаил Евграфович Салтыков-Щедрин - Премудрый пискарь (kindle)
-			<li><a href="http://mobile.flibusta.is/b/81130/mobi">Михаил Евграфович Салтыков-Щедрин - Пропала совесть (kindle)
-			<li><a href="http://mobile.flibusta.is/b/95985/mobi">Александр Трифонович Твардовский - Василий Тёркин (kindle)
-			<li><a href="http://mobile.flibusta.is/b/111991/mobi">Иван Алексеевич Бунин - Часовня (kindle)
-			<li><a href="http://mobile.flibusta.is/b/66354/mobi">Иван Алексеевич Бунин - Господин из Сан-Франциско (kindle)
-			<li><a href="http://mobile.flibusta.is/b/215872/mobi">Михаил Александрович Шолохов - Судьба человека (kindle)
-			<li><a href="http://mobile.flibusta.is/b/53364/mobi">Александр Исаевич Солженицын - Матренин двор (kindle)
-</ul>
-	</div>
-	<div id="sciencefiction" class="box">&nbsp;
-	</div>
-	<div id="selfdevelopment" class="box">
-		<ul>
-			<li>
-				<a href="s/1.mobi">Бен Хоровиц - Легко не будет (kindle)</a>
+				<li><a href="http://mobile.flibusta.is/b/94929/mobi">Жан Батист Мольер - Тартюф (kindle)
+				<li><a href="http://mobile.flibusta.is/b/169510/mobi">Денис Иванович Фонвизин - Недоросль (kindle)
+				<li><a href="http://mobile.flibusta.is/b/143864/mobi">Карамзин - Бедная Лиза (kindle)
+				<li><a href="http://mobile.flibusta.is/b/147684/mobi">Джордж Гордон Байрон - Паломничество Чайльд-Гарольда (kindle)
+				<li><a href="http://mobile.flibusta.is/b/397134/mobi">Александр Сергеевич Грибоедов - Горе от ума (kindle)
+				<li><a href="http://mobile.flibusta.is/b/173154/mobi">Александр Сергеевич Пушкин - Борис Годунов (kindle)
+				<li><a href="http://mobile.flibusta.is/b/107678/mobi">Александр Сергеевич Пушкин - Цыганы (kindle)
+				<li><a href="http://mobile.flibusta.is/b/385832/mobi">Иван Сергеевич Тургенев - Ася (kindle)
+				<li><a href="http://mobile.flibusta.is/b/436414/mobi">Михаил Евграфович Салтыков-Щедрин - Сказки (kindle)
+				<li><a href="http://mobile.flibusta.is/b/81133/mobi">Михаил Евграфович Салтыков-Щедрин - Премудрый пискарь (kindle)
+				<li><a href="http://mobile.flibusta.is/b/81130/mobi">Михаил Евграфович Салтыков-Щедрин - Пропала совесть (kindle)
+				<li><a href="http://mobile.flibusta.is/b/95985/mobi">Александр Трифонович Твардовский - Василий Тёркин (kindle)
+				<li><a href="http://mobile.flibusta.is/b/111991/mobi">Иван Алексеевич Бунин - Часовня (kindle)
+				<li><a href="http://mobile.flibusta.is/b/66354/mobi">Иван Алексеевич Бунин - Господин из Сан-Франциско (kindle)
+				<li><a href="http://mobile.flibusta.is/b/215872/mobi">Михаил Александрович Шолохов - Судьба человека (kindle)
+				<li><a href="http://mobile.flibusta.is/b/53364/mobi">Александр Исаевич Солженицын - Матренин двор (kindle)
+	</ul>
+		</div>
+		<div id="sciencefiction" class="box">&nbsp;
+		</div>
+		<div id="selfdevelopment" class="box">
+			<ul>
+				<li>
+					<a href="s/1.mobi">Бен Хоровиц - Легко не будет (kindle)</a>
 			</li>
 			<li>
 				<a href="s/2.mobi">Ричард Нисбетт - Мозгоускорители (kindle)</a>

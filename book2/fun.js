@@ -1,8 +1,9 @@
-var drawtr = function(row) {
-    k = Object.keys(row);
-    v = row[k];
-    document.write("<tr> \
-        <td>" + k +" </td> \
-        <td class='c'><div>" + v + "</div></td> \
-    </tr>");
+var drawli = function(row) {
+    k = row[0];
+    v = row[1];
+    document.write('<li><a href="' + k + '">' + v + '</a></li>');
+    // k = http://mobile.flibusta.is/b/65783/mobi
+    // v = Слово о полку Игореве (kindle)
+
 }
+s
