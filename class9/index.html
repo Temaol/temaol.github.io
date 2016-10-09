@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+
+
+<head>
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+	<script src="kuby.js"></script>
+	<script src="felichita.js"></script>
+	<meta charset="UTF-8">
+	<title>Class 9</title>
+</head>
+
+<body>
+	<table border="1" style="margin: 10px">
+		<tr>
+			<td>Aquarium</td>
+			<td>Cubes</td>
+			<td><button onclick="felichita()">Felichita</button></td>
+			<td>Flipflop</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td>vvedi D, A, B, C:
+				<form action="#" onsubmit="false">
+					<input type="text" id="x" onblur="kuby(this.value)">
+					<p>Otvet:
+					<span id="otvet"></span></p>
+				</form>
+			</td>
+			<td>
+				<textarea readonly="true" id="felres" name="felres" rows="8" cols="40"></textarea>
+			</td>
+			<td></td>
+		</tr>
+	</table>
+
+</body>
+
+</html>
