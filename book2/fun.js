@@ -6,4 +6,3 @@ var drawli = function(row) {
     // v = Слово о полку Игореве (kindle)
 
 }
-s
