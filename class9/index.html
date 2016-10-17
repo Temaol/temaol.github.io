@@ -5,6 +5,7 @@
 <head>
 	<!-- <link rel="stylesheet" href="styles.css"> -->
 	<script src="kuby.js"></script>
+	<script src="fish.js"></script>
 	<script src="felichita.js"></script>
 	<meta charset="UTF-8">
 	<title>Class 9</title>
@@ -22,7 +23,7 @@
 			<td></td>
 			<td>vvedi D, A, B, C:
 				<form action="#" onsubmit="false">
-					<input type="text" id="x" onblur="kuby(this.value)">
+					<input type="text" id="x" onblur="document.getElementById('otvet').innerHTML = kuby(this.value)">
 					<p>Otvet:
 					<span id="otvet"></span></p>
 				</form>
