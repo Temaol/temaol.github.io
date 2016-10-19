@@ -1,16 +1,18 @@
 function fish(x) {
-    [volume,quantity] = x.split(' ');
-    [volume,quantity] = [Number(volume),Number(quantity)];
+    [volume, quantity] = x.split(' ');
+    [volume, quantity] = [Number(volume), Number(quantity)];
     var otvet = quantity * 3;
-    if(otvet<=volume){return('N0')}
-else
-    {return('YES ' + div(otvet - volume + 3, 3))};
+    if (otvet <= volume) {
+        return ('N0')
+    }
+    else {
+        return ('YES ' + div(otvet - volume + 3, 3))
+    };
 }
 
 function div(val, by) {
     return (val - val % by) / by;
 }
-
 // tests
 if (fish('10 4') == 'YES 1') {
     console.log('Test for 10 4 passed, otvet is: ' + fish('10 4'));
