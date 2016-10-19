@@ -6,12 +6,15 @@
 	<!-- <link rel="stylesheet" href="styles.css"> -->
 	<script src="kuby.js"></script>
 	<script src="fish.js"></script>
+        <script src="flipflop.js"></script>
 	<script src="felichita.js"></script>
 	<meta charset="UTF-8">
 	<title>Class 9</title>
 </head>
 
 <body>
+	<form action="#" onsubmit="false">
+
 	<table border="1" style="margin: 10px">
 		<tr>
 			<td>Aquarium</td>
@@ -20,20 +23,26 @@
 			<td>Flipflop</td>
 		</tr>
 		<tr>
-			<td></td>
-			<td>vvedi D, A, B, C:
-				<form action="#" onsubmit="false">
+			<td>	<input type="text" id="a" onblur="document.getElementById('a_otvet').innerHTML = fish(this.value)">
+					<p>Ответ:
+					<span id="a_otvet"></span></p>
+</td>
+			<td>Введи D A B C:
 					<input type="text" id="x" onblur="document.getElementById('otvet').innerHTML = kuby(this.value)">
-					<p>Otvet:
+					<p>Ответ:
 					<span id="otvet"></span></p>
-				</form>
-			</td>
+						</td>
 			<td>
 				<textarea readonly="true" id="felres" name="felres" rows="8" cols="40"></textarea>
 			</td>
-			<td></td>
+			<td>	<input type="text" id="f" onblur="document.getElementById('f_otvet').innerHTML = flipflop(this.value)">
+					<p>Ответ:
+					<span id="f_otvet"></span></p>
+</td>
 		</tr>
 	</table>
+	</form>
+
 
 </body>
 
