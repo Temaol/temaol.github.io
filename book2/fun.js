@@ -6,3 +6,10 @@ var drawli = function(row) {
     // v = Слово о полку Игореве (kindle)
 
 }
+var drawul = function(data) {
+    document.write('<ul>');
+    data.forEach(function(item, i, data) {
+        drawli(item);
+    });
+    document.write('</ul>');
+}
