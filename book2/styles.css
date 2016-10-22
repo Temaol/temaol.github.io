@@ -3,17 +3,18 @@ body {
 }
 .box {
   padding: 1em;
-  width: 31%;
+  width: 47%;
   float: left;
 }
 #school {
   background-color: yellow;
 }
 
-#sciencefiction {
-  background-color: skyblue;
-}
-
 #selfdevelopment {
   background-color: papayawhip;
+}
+.form_box {
+  position:static;
+  display: block;
+
 }

@@ -34,6 +34,8 @@ var schoolbooks = [[
 console.log(schoolbooks[0]);
 var sciencefictionbooks = [[]];
 var selfdevelopmentbooks = [[
+  "s/1.mobi","Бен Хоровиц - Легко не будет (kindle)</a>"
+], [
     "s/2.mobi", "Ричард Нисбетт - Мозгоускорители (kindle)"
 ], [
     "s/sb.mobi", "Кен Робинсон - Школа будущего (kindle)"

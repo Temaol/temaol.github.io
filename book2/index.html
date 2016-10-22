@@ -5,7 +5,7 @@
 TODO:
 1) -вынести общие стили в отдельные классы, вынести CSS в отдельный файл-
 2) -перенести данные в json, выводить все js-ом-
-3) добавить другие форматы книг (epub, fb2, pdf где возможно)
+3) -добавить другие форматы книг (epub, fb2, pdf где возможно)-
 4) сделать возможность добавления новых ссылок (с описанием) и сохранением через свою API (его напишу я отдельно)
 5) сделать парсер названий/авторов добавленных книг, чтобы не вводить описания вручную.
 
@@ -22,30 +22,22 @@ TODO:
 <body>
 	<div id="school" class="box">
 		<script type="text/javascript">
-			drawul(schoolbooks);
+			drawul(schoolbooks,true);
 		</script>
 	</div>
-	<div id="sciencefiction" class="box">&nbsp;
-	</div>
 	<div id="selfdevelopment" class="box">
-		<ul>
-			<li>
-				<a href="s/1.mobi">Бен Хоровиц - Легко не будет (kindle)</a>
-			</li>
-			<li>
-				<a href="s/2.mobi">Ричард Нисбетт - Мозгоускорители (kindle)</a>
-			</li>
-			<li>
-				<a href="s/sb.mobi">Кен Робинсон - Школа будущего (kindle)</a>
-			</li>
-			<li>
-				<a href="s/p.mobi">Кен Робинсон - Призвание (kindle)</a>
-			</li>
-			<li>
-				<a href="s/pse.pdf">Удивительные приключения в стране Экономика (PDF)</a>
-			</li>
-		</ul>
+		<script type="text/javascript">
+			drawul(selfdevelopmentbooks, false);
+		</script>
 	</div>
+	<form class="form_box" action="index.html" method="post">
+		<label for="name">Имя книги:</label>
+
+		<input type="text" name="name" value="">
+		<label for="URL">URL:</label>
+		<input type="text" name="URL" value="">
+		<input type="submit" name="name" value="OK">
+	</form>
 </body>
 
 </html>
