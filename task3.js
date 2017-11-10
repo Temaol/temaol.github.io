@@ -22,8 +22,13 @@ function math3() {
     var n = values[1];
     var c = document.getElementById("c").value;
     var prices = c.split(" ");
-    prices = prices.filter(Boolean).sort();
-    console.log(prices)
+    prices = prices.filter(Boolean).sort(function(a,b){ return a - b });
+  if (prices.length != n) {
+    put_in_place("number", "Обмеження: SIZE(C) = N")
+  }
+  else {
+  console.log(k);
+  console.log(prices);
     var number = 0;
     while (k > 0) {
         k -= prices[number];
